@@ -29,4 +29,31 @@ We will be primarily evaluating based on how well the search works for users. A 
 current state, can be deployed easily on Heroku's free tier.
 3. In your submission, share with us what changes you made and how you would prioritize changes if you had more time.
 
+## Completed
+
+Deployed on https://rocky-hollows-89398.herokuapp.com/
+
+- Redirect invalid routes to home
+- Support case-insensitive search
+- Highlight matched texts
+- Show matches per title/section
+- Show number of matched lines per title/section
+- Provide some way for users to quickly navigate to each search result assuming they have access to full article (went with line number here)
+- Show matched line, line before, and line after for context
+- Fix bug on client where 'tr's weren’t closed properly, and text wasn’t added to 'td's inside 'tr's
+preserve formatting/spacing of original text
+- Allow searching phrases or multiple words
+
+
+## Future Improvements
+
+- Improve performance for queries of very common/frequent words, including search terms less than 3 characters
+- Spawn child processes to handle multiple requests at once
+- Show errors on UI
+- Show loading indicator on UI
+- Allow searching with regex
+- On clicking line on UI, link out to a page containing the full article and scroll down to the clicked line
+- Make UI nicer and more visually appealing
+- Show total matches for each title/article instead of lines matched (for multiple matches in a single line)
+- Improve accessibility
 

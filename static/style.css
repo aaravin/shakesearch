@@ -17,6 +17,48 @@ html {
   line-height: 1.4;
 }
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: monospace;
+}
+
+td, tr {
+  white-space: pre;
+  margin: 0;
+  padding: 0;
+}
+
+.title-cell {
+  font-family: "American typewriter";
+}
+
+.match-count {
+  font-size: 10px;
+  color: grey;
+  font-style: italic;
+}
+
+.line-number-cell {
+  text-align: right;
+  color: grey;
+  font-size: 10px;
+  border-right: 1px solid grey;
+  padding-right: 10px;
+}
+
+.text-cell {
+  padding-left: 20px;
+}
+
+.match {
+  background-color: yellow;
+}
+
+.blank-row {
+  height: 10px;
+}
+
 /*
    * Remove text-shadow in selection highlight:
    * https://twitter.com/miketaylr/status/12228805301
